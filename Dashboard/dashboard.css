@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "mainfont";
+    src: url(../.fonts/mainfont/Pinar-DS2-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer {
+    font-family: "mainfont";
+    background-color: rgb(30, 196, 196);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WelcomePage {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.WelcomePage h1 {
+    color: white;
+    font-size: 60px;
+    opacity: 0;
+    scale: 0.5;
+    animation: fade-in 1s ease forwards;
+}
+
+.optionDiv {
+    opacity: 0;
+    transition: 0.5s;
+    animation: fade 1s 0.5s ease forwards;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.optionDiv button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.048);
+    color: white;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.5s;
+}
+
+.optionDiv button:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.optionDiv button:active {
+    scale: 0.8;
+    box-shadow: none;
+}
+
+.but1 {
+    animation: buttons infinite 3s ease;
+}
+
+.but2 {
+    animation: buttons infinite 3s 1.5s ease;
+}
+
+.but3 {
+    animation: buttons infinite 3s  ease;
+}
+
+.NotesPage {
+    width: 1000px;
+    height: 800px;
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+    animation: notepage infinite 4s ease;
+    border-radius: 20px;
+}
+
+.TasksPage {
+    width: 1000px;
+    height: 800px;
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+    background-color: transparent;
+    border-radius: 20px;
+    animation: notepage infinite 4s ease;
+    border: 3px solid white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AddTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddTask h2 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 4px 5px black;
+}
+
+.AddTask input {
+    outline: none;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 0px 5px;
+}
+
+.AddTask input::placeholder {
+    color: black;
+}
+
+.AddTask button {
+    margin-top: 10%;
+    padding: 5px 40px;
+    background-color: rgb(17, 216, 66);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0px 4px 5px black;
+}
+
+.AddTask button:hover {
+    background-color: rgb(43, 168, 74);
+}
+
+.AddTask button:active {
+    scale: 0.9;
+    box-shadow: none;
+}
+
+.ChangePage {
+    display: flex;
+    flex-direction: column;
+    margin-top: -80%;
+    margin-bottom: 50%;
+}
+
+.ChangePage button {
+    padding: 10px 90px;
+    background-color: transparent;
+}
+
+.ChangePage button:hover {
+    background-color: aqua;
+}
+
+.ShowTask {
+    width: 60%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: auto;
+    padding: 10px 40px;
+    transition: 0.5s;
+}
+
+.ShowTask p {
+    font-size: 18px;
+    color: rgb(15, 15, 15);
+}
+
+.fullButt {
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.esc {
+    display: none;
+    transition: 0.5s;
+}
+
+.fullButt:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(-50px);
+        text-shadow: 0px 4px 5px black;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(211, 211, 211);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(84, 255, 232);
+}
+
+
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes buttons {
+    50% {
+        transform: translateY(30px);
+        box-shadow: 0px 2px 5px black;
+    }
+}
+
+@keyframes notepage {
+    50% {
+        box-shadow: 0px 4px 10px black;
+        scale: 1.05;
+        background-color: rgba(255, 255, 255, 0.11);
+    }
+}

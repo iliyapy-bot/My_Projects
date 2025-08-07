@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iliya dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div id="mc" class="maincontainer">
+      <div id="wp" class="WelcomePage">
+        <h1>Welcome</h1>
+        <div class="optionDiv">
+          <button onclick="but2()" class="but2">Tasks</button>
+        </div>
+      </div>
+      <div id="np" class="NotesPage"></div>
+      <div id="tp" class="TasksPage">
+        <div class="AddTask">
+          <h2>AddTask</h2>
+          <input id="Task" type="text" placeholder="..." />
+          <button type="submit" onclick="Addtask()">ADD</button>
+        </div>
+        <div id="st" class="ShowTask">
+          <button class="fullButt" onclick="fulltask()">FullScrean</button>
+          <button id="eb" class="fullButt esc" onclick="Escape()">Esc</button>
+          <ul id="Ulist"></ul>
+        </div>
+      </div>
+      <div id="gt" class="GoalsPage"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
