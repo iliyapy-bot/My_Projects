@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(105, 105, 206), rgb(45, 45, 216)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+    box-shadow: 0px 0px 300px rgb(105, 105, 206);
+}
+
+.task {
+    margin-top: 5%;
+    margin-right: 60%;
+    padding: 1% 5%;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    box-shadow: 0px 2px 5px black;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-shadow: 0px 2px 5px black;
+}
+
+.form {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 70%;
+    height: 8%;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: right;
+    padding: 0 2%;
+    font-size: 17px;
+    box-shadow: 0px 1px 5px black;
+}
+
+.submit {
+    margin-top: 15%;
+    padding: 2% 10%;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.3s;
+}
+
+.submit:active {
+    scale: 0.5;
+}
+
+.view {
+    width: 0;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: right;
+    padding-top: 1%;
+    padding-right: 1%;
+    color: white;
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding-top: 4%;
+    padding-right: 4%;
+}
+
+.tasks {
+    height: 150px;
+    gap: 10px;
+}
+
+.close {
+    padding: 1% 6%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0px 2px 5px black;
+    transition: 0.3s;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.delete {
+    margin-right: 75%;
+    padding: 1% 6%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0px 2px 5px black;
+    transition: 0.3s;
+}
+
+.delete:active {
+    scale: 0.5;
+}
+
+.close:active {
+    scale: 0.5;
+}
+
+.buttons {
+    display: flex;
+}
+
+.taskdiv {
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: right;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.kiram {
+    width: 15%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.editPlace {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.164);
+    margin-top: -11%;
+    margin-left: 7%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.EDinput {
+    padding: 1% 2%;
+    width: 70%;
+    text-align: right;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 5px black;
+}
+
+.submitEdit {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1% 8%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px black;
+}

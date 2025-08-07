@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-manager</title>
+    <link rel="stylesheet" href="task-manager.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="add-div" class="main">
+            <button id="taskbut" onclick="viewtask()" class="task">view task</button>
+            <h1 class="title">task-manager</h1>
+                <input id="inputID" class="input" type="text">
+                <button id="sub" onclick="addtask()" class="submit" type="submit">submit</button>
+        </div>
+        <div>
+            <div id="view-task" class="view">
+                <div class="tasks">
+                    <div id="taskD" class="taskdiv">
+                        <h2 id="task1"></h2>
+                        <button class="kiram" onclick="editPlace1()" id="edit1" type="submit">edit</button>
+                    </div>
+                    <div id="taskD1" class="taskdiv">
+                        <h2 id="task2"></h2>
+                        <button class="kiram" onclick="editPlace2()" id="edit2" type="submit">edit</button>
+                    </div>
+                    <div id="taskD2" class="taskdiv">
+                        <h2 id="task3"></h2>
+                        <button class="kiram" onclick="editPlace3()" id="edit3" type="submit">edit</button>
+                    </div>
+                    <div id="taskD3" class="taskdiv">
+                        <h2 id="task4"></h2>
+                        <button class="kiram" onclick="editPlace4()" id="edit4" type="submit">edit</button>
+                    </div>
+                    <div id="taskD4" class="taskdiv">
+                        <h2 id="task5"></h2>
+                        <button class="kiram" onclick="editPlace5()" id="edit5" type="submit">edit</button>
+                    </div>
+                    <h2 id="alert"></h2>
+                </div>
+                <div class="buttons">
+                    <button id="closebut" onclick="closetask()" class="close">close</button>
+                    <button id="deletebut" class="delete" onclick="deletetask()">delete</button>
+                </div>
+            </div>
+            <div id="editPL" class="editPlace">
+                <input type="text" id="editinput" class="EDinput" placeholder="edit..">
+                <button type="submit" id="SubEdit" onclick="subedit()" class="submitEdit">submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="task-manager.js"></script>
+</body>
+</html>
