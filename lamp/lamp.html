@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lamp.css" />
+  </head>
+  <body>
+    <div class="mainlamp">
+      <div class="sim" id="si"></div>
+      <div class="bilbil" id="bi"></div>
+      <div class="lamp">
+        <img src="../.images/lamppng.parspng.com_.png" alt="kir" />
+      </div>
+      <div class="lights" id="li">
+        <div class="light2"></div>
+        <div class="light1"></div>
+        <div class="light"></div>
+      </div>
+    </div>
+    <div class="keydiv">
+      <input id="ran" type="range" oninput="adjust()" value="50" />
+      <div class="key">
+        <button class="kiram" onclick="clickam()"></button>
+      </div>
+    </div>
+
+    <script src="lamp.js"></script>
+  </body>
+</html>
