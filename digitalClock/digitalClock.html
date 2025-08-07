@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center"
+      style="background-image: url('../images/DC-back.jpg')"
+    >
+      <div
+        id="Red"
+        class="w-10 h-2 bg-red-600 ml-90 rounded-t transition-all"
+        onclick="redbut()"
+      ></div>
+      <div
+        class="bg-gray-900 flex justify-center items-center px-5 py-4 rounded"
+      >
+        <div
+          class="bg-gray-700 flex justify-center items-center pb-2 rounded px-8 max-w-100"
+        >
+          <h1 id="Clock" class="text-8xl text-white">00:00:00</h1>
+          <h2 id="Dateh" class="text-8xl text-white hidden"></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="DigitalClock.js"></script>
+  </body>
+</html>
