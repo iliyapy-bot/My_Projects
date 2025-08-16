@@ -1,0 +1,333 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+}
+
+.HomeDiv {
+  width: 100%;
+  background-image: url(images/StarWars.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: rgb(118, 102, 255);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SiteName {
+  font-size: 40px;
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.links {
+  font-size: 25px;
+  margin-right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.NotDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotDiv h1 {
+  color: white;
+  font-size: 150px;
+}
+
+.NotDiv h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.NotDiv h3 {
+  color: rgb(63, 63, 63);
+}
+
+.goBackButton {
+  text-decoration: none;
+  margin-top: 15px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.goBackButton:hover {
+  scale: 1.1;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.425);
+}  
+
+.goBackButton:active{
+  scale: 0.9;
+}
+
+.fa-magnifying-glass {
+  font-size: 100px;
+}
+
+.HomeMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SearchDiv {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.SearchWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.SearchDiv input {
+  width: 700px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid rgb(141, 141, 141);
+  padding: 0px 15px;
+  outline: none;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.185);
+  color: white;
+}
+
+.Search-button {
+  background-color: rgb(118, 102, 255);
+  width: 200px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.Search-button:hover {
+  animation: pop infinite 3s ease;
+}
+
+.Search-button:active {
+  scale: 0.9;
+}
+
+.SearchDiv input::placeholder {
+  font-size: 25px;
+}
+
+.MovieSection {
+  width: 80%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.CardDiv {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.imgDiv {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.movieTitle {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.movieDate{
+  color: rgb(126, 126, 126);
+}
+
+.movies {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieTitle {
+  height: 55px;
+}
+
+.MovieSectionTitle {
+  color: white;
+  font-size: 40px;
+}
+
+.movieTitleDiv {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  border-bottom: 2px solid white;
+}
+
+.FaveButt {
+  background-color: rgb(59, 59, 59);
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-top: 10px;
+  position:absolute;
+  margin-left: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.FaveButt:hover {
+  scale: 1.1;
+}
+
+.FaveButt:active {
+  scale: 0.9;
+}
+
+.imgDiv .CardWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.mainfavo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoCountaier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.151);
+  border: 2px solid rgb(124, 124, 124);
+  border-radius: 10px;
+  color: rgb(118, 102, 255);
+}
+
+@keyframes pop {
+  50%{
+    scale: 1.1;
+    box-shadow: 0px 4px 5px rgba(58, 58, 58, 0.39);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .SearchDiv input {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  .SearchDiv {
+    height: 200px;
+  }
+
+  .SearchDiv input {
+    width: 300px;
+    height: 40px;
+  }
+
+  .Search-button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .SearchDiv input::placeholder, .SearchDiv input {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .SearchDiv {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    height: 100px;
+  }
+
+  .SiteName {
+    font-size: 30px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+    .CardDiv {
+      width: 250px;
+    }
+
+    .imgDiv {
+      height: 280px;
+    }
+}
